@@ -8,17 +8,18 @@ body {
     flex-direction : column ;
     justify-content: center;
     align-items: center;
-    background-color: #535724;
+    background-image: url(pastelpink.jpg);
     margin : 0;
   
     
 }
 .container{
     display : flex ;
-    background-color: #ffffff;
+
     flex-direction : column ;
-   min-height : 100vh;
-    width : 80%;
+
+     
+    width : 100vw;
     margin : 0 ;
 
 }
@@ -30,6 +31,7 @@ nav {
     height: 10%;
     padding : 20px;
     margin : 0;
+    
 }
 nav ul {
 
@@ -45,7 +47,7 @@ nav ul a {
     font : bolder;
     font-size : 20px;
     padding: 10px;
-    color : black ;
+    color :rgb(86, 74, 74);
 
 }
 .welcome {
@@ -55,36 +57,47 @@ nav ul a {
     justify-content: center;
 
 }
+h1 {
+ font-family: 'Loved by the King', cursive;
+    font-size : 72px;
+    font-weight: 700;
+    margin : 0;
+    padding : 0;
+}
+h1 span {
+
+
+color :#f59c73;
+
+}
 
 #aboutme {
     display : flex ;
     flex-direction : row;
-    justify-content : flex-start;
-    padding : 20px;
-    margin : 30px;
+    width : 100vw;
+    height : 100vh;
+    align-items: center;
+    justify-content: center;
+
+    margin : 0;
+
 } 
 #aboutme .text {
     display : flex ;
     flex-direction : column ;
-    margin-left : 100px;
-    width: 40%;
-    justify-content : flex-start; 
+    margin : 20px;
+
+    color :rgb(86, 74, 74);
+    
+    width :40vw;
 }
 
-.text h1 {
-    
-        font-family: 'lustria', serif;
-        color : rgb(255, 255, 255) ;
-        font-size : 30px;
-        font : bolder;
-    
- 
-    
-}
 
- p {
-   font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+
+ #aboutme p {
+   font-family: Noto Sans, sans-serif;
+    font-size : 20px;
+    font-weight: 400;
     line-height: 2.0;
    
     
@@ -103,7 +116,7 @@ nav ul a {
 }
 a {
     text-decoration : none!important; 
-    color: black;
+    color: rgb(86, 74, 74);
 }
 a i {
     padding: 20px;
@@ -112,13 +125,55 @@ a i {
     
 }
 #aboutme img {
-    width : 425px;
-    height : 500px;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
+    height: 80%;
+
+
+}
+#links-container{
+    display : flex ;
+    flex-direction : column;
     align-items: center;
     justify-content: center;
+    color : rgb(86, 74, 74);
+    width: 100vw;
+    text-align: left;
+    margin: 0;
 }
+#links{
+    display : flex ;
+    flex-direction : row;
+    width : 100vw;
+     padding : 10px;
+    justify-content: center;
+    gap : 50px;
+    margin: 20px;  
+}
+#links a {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    
+    font-family: noto sans, sans-serif;
+    font-size : 50px;
+    font-weight: 700;
+    margin : 10px;
+    padding : 0;
+    width:70%;
+  
+
+}
+#links-container p {
+    font-family: noto sans, sans-serif;
+    width:70%;
+    font-size : 15px;
+    font-weight: 400;
+    line-height: 2;
+   
+}
+
+
+ 
 
 
 #projects-section {
