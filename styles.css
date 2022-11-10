@@ -13,16 +13,7 @@ body {
   
     
 }
-.container{
-    display : flex ;
 
-    flex-direction : column ;
-
-     
-    width : 100vw;
-    margin : 0 ;
-
-}
 
 nav {
     display : flex ;
