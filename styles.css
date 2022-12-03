@@ -1,290 +1,281 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lobster&family=Lustria&display=swap');
 body * {
     box-sizing : border-box;
+    font-family : 'roboto', sans-serif;
 }
-
-body {
-    display : flex ;
-    flex-direction : column ;
-    justify-content: center;
-    align-items: center;
-    background-image: url(pastelpink.jpg);
-    margin : 0;
-  
-    
-}
-
 
 nav {
     display : flex ;
-    flex-direction : row ;
     justify-content : flex-end ;
     height: 10%;
-    padding : 20px;
-    margin : 0;
+
+
+   
     
 }
 nav ul {
+    display : flex;
+    gap : 20px;
+    padding : 10px;
 
     
-    list-style-type : none ;
-    display : flex ;
-    justify-content: space-between;
- 
+    
 }
-nav ul a {
+nav ul a , nav ul div{
+    color : black;
     text-decoration : none ;
-    font-family: 'lustria', serif;
-    font : bolder;
+    font-weight: medium;
     font-size : 20px;
-    padding: 10px;
-    color :rgb(86, 74, 74);
-
+    letter-spacing: 0.15px;
 }
-.welcome {
-    display : flex ;
-    flex-direction : column ;
-    align-self: center;
-    justify-content: center;
-
+nav .dropdown {
+    position : relative ;
 }
-h1 {
- font-family: 'Loved by the King', cursive;
-    font-size : 72px;
-    font-weight: 700;
-    margin : 0;
-    padding : 0;
+nav .dropdown-content {
+    display : none ;
+    position : absolute ;
+    min-width : 160px;
+    z-index : 1;
 }
-h1 span {
-
-
-color :#f59c73;
-
+nav .dropdown:hover .dropdown-content{
+    display: block;
 }
 
-#aboutme {
-    display : flex ;
-    flex-direction : row;
-    width : 100vw;
-    height : 100vh;
+
+
+.container{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width : 100%;
+ 
+  
+}
 
+
+#intro{
+    display : flex; 
+    width : 100%;
+    height :100vh;
+    justify-content : center;
+    align-items : center;
+    gap : 2%;
+    
+
+
+
+}
+h1{
+    font-family: "Noto Sans", sans-serif;
+    font-size:48px;
+    font-weight : light;
+    letter-spacing : -1.5px;
+}
+#intro #intro-text {
+ width : 50%;
+ height : 75%;
+
+ border: 1px solid rgb(22, 22, 22);
+ color : whitesmoke;
+ padding : 20px;
+ background-image: linear-gradient(to right top, #c0a17e, #a88766, #916e4f, #7a5639, #643f25, #59351d, #4e2b15, #44220d, #41220f, #3f2310, #3c2312, #3a2313);
+}
+#intro img {
+    width : 25%;
+    height : 75%;
+
+}
+#showcase {
+    display : flex;
+    flex-direction : column;
+    width: 77%;
+    height : 100vh;
+
+    gap : 20px;
+}
+.showcase-content{
+    display: flex;
+    width : 100%;
+    gap : 2%;
+
+
+}
+
+
+.projectcardlarge{
+    display:flex;
+    flex-direction: column;
+    width : 50%;
+    height : 75%;
+    margin: 0;
+    border : 1px solid rgb(22, 22, 22);
+    text-align: center;
+
+    
+
+
+}
+.projectcardlarge a {
+    text-decoration : none;
+    width: 100%;
+    height: 100%;
+    color : black ;
+
+}
+.projectcardlarge img{
+    width : 100%;
+    height : 80%;
     margin : 0;
-
-} 
-#aboutme .text {
-    display : flex ;
-    flex-direction : column ;
-    margin : 20px;
-
-    color :rgb(86, 74, 74);
     
-    width :40vw;
 }
-
-
-
- #aboutme p {
-   font-family: Noto Sans, sans-serif;
-    font-size : 20px;
-    font-weight: 400;
-    line-height: 2.0;
-   
+ a span{
+    align-self: flex-end;
+    padding : 5px;
+    font-size: 20px;
+    margin : 0;
     
-
 }
-
-
-
-.text .socials {
+.socials {
     display : flex ;
     flex-direction : row ;
     justify-content : flex-start ;
+    gap : 20px;
+    padding : 10px;
     text-decoration: none;
+    
    
     
 }
-a {
-    text-decoration : none!important; 
-    color: rgb(86, 74, 74);
-}
-a i {
-    padding: 20px;
-    font-size: 25px;
-  
-    
-}
-#aboutme img {
-    height: 80%;
-
-
-}
-#links-container{
-    display : flex ;
-    flex-direction : column;
-    align-items: center;
-    justify-content: center;
-    color : rgb(86, 74, 74);
-    width: 100vw;
-    text-align: left;
-    margin: 0;
-}
-#links{
-    display : flex ;
-    flex-direction : row;
-    width : 100vw;
-     padding : 10px;
-    justify-content: center;
-    gap : 50px;
-    margin: 20px;  
-}
-#links a {
-    display: flex;
-    flex-direction: column;
-}
-h2 {
-    
-    font-family: noto sans, sans-serif;
-    font-size : 50px;
-    font-weight: 700;
-    margin : 10px;
-    padding : 0;
-    width:70%;
-  
-
-}
-#links-container p {
-    font-family: noto sans, sans-serif;
-    width:70%;
-    font-size : 15px;
-    font-weight: 400;
-    line-height: 2;
-   
-}
-
-
- 
-
-
-#projects-section {
-    display : flex ;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 30px;
- 
-    
-    
-}
-#projects-section h2 {
-    font-family: comfortaa , sans-serif;
-    font-size: 25px;
-    margin-left: 30px;
-}
-#projects-section h3 {
-   font-family: comfortaa , sans-serif;
+.socials a {
+    color : white;
     font-size: 20px;
+    text-decoration: none;
 }
-    
-
-
-.projects{
-    display : flex ;
-    width : 100%;
-    flex-direction : column ;
-    align-items: flex-start;
-    justify-content: flex-start;
-   
-    
-   
-}
-.projects .project {
-
-    width : 100%;
-    display : flex ;
-    flex-direction : column ;
-    border-top : rgb(225, 216, 212) solid 1px;
-    border-bottom : rgb(225, 216, 212) solid 1px;
-
-
-}
-.project .project-details {
+.links {
     display : flex ;
     flex-direction : row ;
-    justify-content: space-between;
-    align-items: center;
-    padding : 40px;
-    padding-bottom: 0px;
-    margin: 0px;
-
-}
-.project-details .name {
-    font-family: 'lustria', serif;
-    font-size: 20px;
-    font : bolder;
-    color : rgb(0, 0, 0) ;
-    display: flex;
-
-}
-.project-details .date {
-    font-family: 'lustria', serif;
-    font-size: 15px;
-    color : rgb(0, 0, 0) ;
-}
-
-
-.project .project-description {
-    display : flex ;
-    width: 100%;
-    flex-direction : column ;
-    margin-top : 0px;
-    padding-left: 30px; 
-}
-.project-description p {
-    font-family: 'lustria', serif;
-    font-size: 15px;
-    color : rgb(0, 0, 0) ;
+    justify-content : flex-start ;
+    align-items: flex-start;
+    gap : 20px;
+    padding : 10px;
+    text-decoration: none;
     
-    margin-top : 0px;
+   
+    
 }
-
-
-
-
- #projects-section #skills {
-    display : flex ;
-    margin: 20px;
-    flex-wrap: wrap;
+.biocontainer{
+    display:flex;
+    margin-top: 50px;
+    width : 100%;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 20px;
-
-  
+   
 }
-#skills .skill{
-    display : flex ;
-    width: 100px;
-    height: 40px;
-    align-items: center;
+#bio{
+    display : flex;
+    flex-direction : column;
+    text-align: center;
+    width : 50%; 
+    margin-left : 2%;
+ 
+}
+.links a {
+    color : black;
+    font-size: 20px;
+    text-decoration: none;
+}
+#collagecontent{
+    display: flex;
+    width : 50vw;
+    height : 80vh;
     justify-content: center;
-    border-radius: 10px;
-    border: rgb(225, 216, 212) solid 1px;
-
+    align-items: center;
+    gap : 5px;
 
 }
-.skill h4 {
-    font-family: 'lustria', serif;
-    color : rgb(0, 0, 0) ;
-    font-size: 15px;
+
+.vertical img {
+    height : 100%;
+    width : 100%;
+
+}
+#collage .horizontal {
+    display : flex;
+    flex-direction : column;
+    gap : 5px;
+    width : 40%;
+    height : 100%;
     
 }
+.horizontal img {
+    height : 50%;
+    width : 100%;
+}
+#socialfeeds{
+    margin-top : 100px;
+    display : flex;
+    flex-direction : column;
+    border : 1px solid rgb(108, 100, 100);
+    padding: 10px;
 
-
-
-#contact-footer {
-    display : flex ;
-    height : 15%;
-   
+}
+.feed{
+    display: flex;
+    width : 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap : 20px;
+}
+.twitter-timeline{
+    width : 50%;
+    height : 100%;
+}
+.casestudy{
+    display: flex;
+    flex-direction: column;
+    width : 80%;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+    border : 1px solid rgb(108, 100, 100);
+    padding : 10px;
+}
+.casestudy hr {
+    width : 70%;
+    border : 1px solid rgb(108, 100, 100);
+    margin :0;
+}
+.step{display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;}
+.step img {
+    width : 45%;
+    height : 100%;
+}
+.description{
+    display : flex;
+    flex-direction : column;
+    width : 50%;
+    
+}
+ h2{
+    width : 80%;
+}
+#bio p {
+    
+    line-height: 1.5;
+    letter-spacing: 0.15px;
+    font-size: 16px;
+}
+.backarrow{
+    align-self: flex-start;
+    display : flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom : 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color :rgb(22, 22, 22);
 }

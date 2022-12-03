@@ -1,7 +1,11 @@
+<!DOCTYPE html>
 
-<html>
+
+
+<html lang="en">
     <head>
         <title> Mame Coumba KA </title>
+        
         <link href = "styles.css" rel = "stylesheet" >
         <script src="https://kit.fontawesome.com/358d9d2023.js" crossorigin="anonymous" ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +15,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,100&family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@300&family=Lobster&family=Loved+by+the+King&family=Lustria&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     </head>
 
@@ -18,48 +24,109 @@
        
         <nav >
             <uL>
-            <a href = #aboutme> About Me </a>
-            <a href = #projects-section> Projects </a>
+            <a href="/">Home </a>
+            <a href = "bio.html"> About Me</a>
+
+            <div class="dropdown">Projects
+                <div class="dropdown-content">
+                  
+                <a href="design.html">Design Projects</a>
+                <a href="code.html">Code Projects</a>
+                  </div>
+                </div>
+
+
+            <a href = "https://drive.google.com/file/d/1MQuWApqQuLBHd-uI9N9AwqOUkwW_W1L3/view?usp=sharing"> Resume </a>
+            <a href="mailto:mameka2024@u.northwestern.edu"> Contact</a>
         
             
             </uL>
         </nav>
-        
-        <div id = "aboutme">
-            <img src = "last.png" alt = "Coumba" >
-            <div class = "text">
-               
-                <h1> Hey, I'm <span>Coumba </span>! </h1>
-                <p> I am a Junior majoring in CS and doing the Segal Design Certificate. I am interested in Design and Media Entrepreneurship and next quarter I will be doing the Bay Area Design Innovation Immersion Program in San Francisco.
-
-                    Check out my glitch page for my Generative Art projects !
-
-
-                </p>
-           
+        <div class = "container" >
+        <div id="intro">
+            <div id="intro-text">
+                <h1>Hi, I am Coumba and I am a Computer Science and Design student.</h1>
+                <p> I am junior at Northwestern University and I am interested in UI/UX, Product Design and Software Engineering. </p>
+                <p> Let's stay in touch !</p>
                 <div class = "socials">
-                    <a href="https://coumbak.glitch.me/"><i class="fa fa-paint-brush" aria-hidden="true"></i></a>
-                    <a href = https://github.com/coumbaK > <i class="fa-brands fa-github"> </i> </a>
-                    <a href = "https://www.linkedin.com/in/mame-coumba-ka/" > <i class="fa-brands fa-linkedin" ></i> </a>
+                    <a href="https://coumbak.glitch.me/"><span class="material-symbols-outlined">
+                        brush
+                        </span></a>
+                    <a href = "https://github.com/coumbaK"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mame-coumba-ka/" > <i class="fa-brands fa-linkedin" ></i> </a>
+                    <a href="mailto:mameka2024@u.northwestern.edu"><span class="material-symbols-outlined">
+                        alternate_email
+                        </span></a>
 
                 </div>
-
-         
+                    
             </div>
+            <img src="pp.JPG" alt="Mame Coumba KA">
+                
+        </div>
+       
+        <div id="showcase">
+            <div id="showcase-text">
+                
+            <h2>Latest Projects</h2>
+            </div>
+            
+          <div class="showcase-content">
+            <div class ="projectcardlarge">
+            <a href="casestudy.html">
+                <span class="material-symbols-rounded">
+                    arrow_outward
+                    </span>
+                <img src="busbro.png" alt="Northwestern Students Bus Experience Study Case">
+                <div class="projectshortdescription">
+                    
+                  <h3>Northwestern Bus Study Case</h3>
+
+                </div>
+            </a>
+            </div>
+ 
+            <div class ="projectcardlarge">
+               <a href="coding.html">
+                <span class="material-symbols-rounded">
+                    arrow_outward
+                    </span>
+                    
+                    
+                <img src="womanreading.png" alt="Reading List App">
+                <div class="projectshortdescription">
+                    
+                  <h3>Reading List App</h3>
+                  
+                </div>
+                </a>
+            
+                
+            </div>
+
+          </div>
+      
+                
+
            
-
-        </div>
-        <div id="links-container">
-            <h2>My Portfolio</h2>
-            <p>I am a student in Design and Computer Science and my portfolio reflects my varied interests in Software Engineering, Product Design and UI/UX design. Check out my Coding page for web development , AI-related and other programming projects and head over to my Design page to see how I apply my design thinking process to conduct user research and design wireframes and prototypes.  </p>
-            <div id="links">
-             <a href="/"> <img src= "iconcode.png">Coding Projects</a>
-            <a href="/"> <img src= "iconui.png"> UI UX projects </a>
-            </div>
-            
             
         </div>
+        <div class="links">
+            <a href="design.html">
+                Design Projects
+                <span class="material-symbols-rounded">west</span>
+               </a>
+            
 
+            
+            <a href="coding.html">
+                <span class="material-symbols-rounded">east</span>
+
+                Codings Projects</a>
+        </div>
+
+        </div>
+        
  
 
 
