@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/92a7126d32.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat+Alternates:ital,wght@1,500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
@@ -19,13 +20,55 @@
 </head>
 <body>
     <div class="header">
-        <
+      
+      <a class="close" href="/"><i class="fa-solid fa-x" style="color: #ffffff;"></i> Close Project</a>
+      <div class="header-content">
+      <h2>Project SbFake</h2>
+      <p>SbFAKE is an innovative machine learning algorithm, born in the Northwestern Security & AI lab to counter Intellectual Property (IP) theft. This innovate solution uses a unique combination of language processing , optimization, and the psychological notion of surprise to create counterfeit variants of technical documents. This strategic approach aims to deter cyber attackers intent on IP theft, a threat estimated to cost the US economy between $225 billion to $600 billion annually, constituting 1% to 5% of the GDP.</p>
+      <p> My role in this project was to develop a user-friendly web interface for SbFAKE. This interface enables users to generate counterfeit documents with customizable parameters, compare fakes and originals, and contribute to algorithm enhancement by suggesting substitution replacements.</p>
+      <ul>
+        <li> 
+          <span>Role</span>
+          <p> Full Stack Developer</p>
+        </li>
+        <li>
+          <span>Client</span>
+          <p> Northwestern University Security & AI lab</p>
+        </li>
+        <li><span>Period</span>
+          <p>Summer-Fall 2023</p>
+      </ul>
+      <ul>
+        <li> 
+          <span>Tools</span>
+          <p> Django, React, Linux , Nginx </p>
+        </li>
+       
+      </ul>
+    </div>
+    </div>
+    <div class="project-container">
+      <h3>Collaboration and User-Centric Design</h3>
+      <p>The first step in this project involved collaborative and iterative design sessions with the research team behind SbFAKE reviewing designs and brainstorming ideas. Our shared vision focused on enabling users to efficiently examine both the authentic document and its counterfeit counterpart within a single page, enhancing the user experience. </p>
+      <div class ="row">
+        <div class="col">
+          <img src="assets/sbfake2.png" alt="sbfake2">
+        </div>
+        <div class="col">
+          <img src="assets/sbfake3.png" alt="sbfake3">
+        </div>
+      </div>
+      <h3>Enhanced User Engagement</h3>
+      <p>To maintain user involvement during the algorithm's runtime, a challenge given its duration of 30-60 minutes, I harnessed the capabilities of two libraries, Celery and Celery-Progress. These tools expertly managed asynchronous tasks and provided real-time progress updates to the React Client.</p>
+      <img src="assets/sbfake4.png" alt="sbfake4">
+      <p> This effectively enhanced the usability of our tool and addressed potential obstacles our users could have encountered.</p>
+      <h3>Robust and Secure Backend</h3>
+      <p>The SbFAKE project demanded a robust and secure backend to address cybersecurity concerns comprehensively. To meet these requirements, I implemented a REST API using the Django DRF framework, fortified with session authentication and served with Gunicorn. Further bolstering security, NGINX served as a reverse proxy to host both the client and server. The entire system was deployed on a private RHEL8 remote server, ensuring a secure and efficient environment</p>
+      <img src="assets/sbfake5.png" alt="sbfake5">
+      <p>We presented a live demo of the SbFake interface and algorithm at the National Security and AI conference hosted by the Buffett Instute for Global Affairs and NSAIL however this tool is not yet publicly available as we are continuously improving the algorithm and interface with the insights we gathered.</p>
+
 
     </div>
-    <main>
-
-
-    </main>
     <footer>
 
     </footer>

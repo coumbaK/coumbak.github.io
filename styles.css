@@ -128,8 +128,9 @@ script,canvas {
   align-items: center;
   color: #ffffff;
 
-  gap: 20%;
+
 }
+
 .desc {
  
   
@@ -149,6 +150,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 50px; /* 250% */
+color : #fff;
 }
 
 .collage {
@@ -156,13 +158,20 @@ line-height: 50px; /* 250% */
   justify-content: center;
   align-items: center;
   background-color: #068D9D;
+ gap: 0;
+
+ 
+ 
+ 
 }
 
 .collage img {
-  max-width: 20%;
-  max-height: auto;
+  width: 270px;
+height: 343px;
   object-fit: cover;
-  position: absolute;
+  margin : 0;
+
+  
 
 }
 a {
@@ -172,12 +181,12 @@ a {
 
 /* Apply rotation and z-index to each image */
 .collage img:nth-child(1) {
-  transform: rotate(5deg);
+  transform: rotate(24.36deg);
   z-index: 3;
 }
 
 .collage img:nth-child(2) {
-  transform: rotate(-5deg);
+  transform: rotate(-17.219deg);
   z-index: 2;
 }
 
@@ -185,16 +194,32 @@ a {
   transform: rotate(3deg);
   z-index: 1;
 }
-#projects  {
-  width : 70%;
-  margin : 5% 0%;
+#coding {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap : 5%;
 }
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  
+  padding : 5%;
+}
+
+
+
 .project.featured {
   display : flex;
   flex-direction: row;
   padding : 0;
   margin : 5% 0%;
   gap : 5%;
+  
 }
 .project-desc h3 {
   color: #000;
@@ -204,13 +229,13 @@ a {
   font-weight: 600;
   line-height: 50px; /* 208.333% */
 }
-.project-desc p {
+p {
   color: #000;
 font-family: Verdana;
 
 font-style: normal;
-font-weight: 300;
-line-height: 50px; /* 250% */
+
+line-height: 50px; 
 }
 #projects h2{
   color: #000;
@@ -221,11 +246,30 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+.project.coding{
+  display : flex;
+  flex-direction: column;
+  justify-content : space-between;
+  align-items : space-between;
+  width : 450px;
+  height : 400px;
+
+
+  padding : 5%;
+  margin : 5% 0%;
+  gap : 5%;
+  background-color:#87CEFA;
+
+
+} 
+.project.coding i {
+  font-size: 24px;
+} 
 .nav-link {
   text-decoration: none;
   color : #000;
-}
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+} 
+ .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #000;
   text-align: center;
   font-family: Montserrat;
@@ -233,15 +277,15 @@ line-height: normal;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
-.nav-tabs .nav-link {
+} 
+ .nav-tabs .nav-link {
   color: #000;
   text-align: center;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
+} 
 .footer{
   display : flex;
   flex-direction : column; 
@@ -267,12 +311,13 @@ line-height: normal;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}xf
+}
 .footer .contact{
   display : flex;
   flex-direction : row;
   justify-content : space-between;
   align-items : center;
+  margin : 5% 0%;
  
 }
 .pe {
@@ -296,7 +341,87 @@ line-height: normal;
 }
 .header {
   background: url("Gradient.png"), lightgray 50% / cover no-repeat;
-  height: 50vh;
-  width : 100%;
+    width : 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* #projects-research {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align projects to the bottom */
+  /* width: 100%;
+}*/
+.project img {
+ 
+  border : 1px solid #A55B80;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width : 70%;
+  margin : 5% 0%;
+  height : 100%;
+
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width : 70%;
+
+
+
+}
+.header-content > h1, .header-content > h2, .header-content > h3,.header-content > p , .header-content > span {
+  color: #fff;
+  
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  padding : 0;
+  list-style-type: none;
+  width : 100%;
+  margin: 0;
+}
+.header ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding: 2%;
+  list-style-type: none;
+  color : #fff;
+}
+.header ul li p {
+  color : #fff;
+}
+.header ul li span {
+  color: #FFF;
+
+font-weight: 300;
+line-height: normal;
+}
+.close{
+  align-self : flex-start;
+  margin:2%;
+  color : #fff !important;
+  
+}
+.close:hover{
+
+  text-decoration: underline 1px #fff;
+  font-size : 20px;
+
+}
+.socials i {
+  color : #fff;
+  font-size : 20px;
+  margin : 0 2%;
 }

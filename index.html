@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://kit.fontawesome.com/92a7126d32.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat+Alternates:ital,wght@1,500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
@@ -53,56 +54,107 @@
 
        
         <div id="aboutme">
-            <div class="collage">
-                <img src="assets/shanghai.jpg" alt="mame">
-                <img src="assets/dakar.jpg" alt="mame">
-                <img src="assets/chi.jpg" alt="mame">
-
-            </div>
+           <img src="assets/collage.png" alt="mame">
             <div class="desc">
             <h2> About Me </h2>
             <p>I'm not just about code; I'm all about making technology that serves people's needs and reflects human values.</p>
-             <p>I research  and develop <span style="color :rgb(107, 53, 53)">Human-AI tools </span>  in Northwestern Design, Technology and Research group seeking to support designers of context aware applications.  </p>
-            <p>I am a part-time <span style="color :rgb(97, 60, 132)"> software developer </span> at the Knight Lab and Northwestern Security and AI lab where I’ve made a weather report generation tool for local newspapers and a user application for a ML algorithm</p>
+             <p>I research  and develop <span style="color :#DBB1BC">Human-AI tools </span>  in Northwestern Design, Technology and Research group seeking to support designers of context aware applications.  </p>
+            <p>I am a part-time <span style="color :#46166B"> software developer </span> at the Knight Lab and Northwestern Security and AI lab where I’ve made a weather report generation tool for local newspapers and a user application for a ML algorithm</p>
             
             <p>Outside of school and work , I love water and my favorite hobby is kayaking.  A fun fact about me is that I’ve lived all my life next to rivers and lakes in 3 continents!</p>
         </div>
         </div>
     </div>
-        <div id="projects">
-            <h2>My Work</h2>
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="projects-featured-tab" data-bs-toggle="tab" data-bs-target="#projects-featured" type="button" role="tab" aria-controls="projects-featured-tab" aria-selected="true">Featured</button>
-                    <button class="nav-link" id="projects-coding-tab" data-bs-toggle="tab" data-bs-target="#projects-coding" type="button" role="tab" aria-controls="projects-coding-tab" aria-selected="false">Coding</button>
-                    <button class="nav-link" id="projects-design-tab" data-bs-toggle="tab" data-bs-target="#projects-design" type="button" role="tab" aria-controls="projects-design-tab" aria-selected="false">Design</button>
-                    <button class="nav-link" id="projects-research-tab" data-bs-toggle="tab" data-bs-target="#projects-research" type="button" role="tab" aria-controls="projects-research-tab" aria-selected="false">Research</button>
+    <div id="projects">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="projects-featured-tab" data-bs-toggle="tab" data-bs-target="#projects-featured" type="button" role="tab" aria-controls="projects-featured" aria-selected="true">Featured</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="projects-coding-tab" data-bs-toggle="tab" data-bs-target="#projects-coding" type="button" role="tab" aria-controls="projects-coding" aria-selected="false">Coding</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="projects-research-tab" data-bs-toggle="tab" data-bs-target="#projects-research" type="button" role="tab" aria-controls="projects-research" aria-selected="false">Research</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="projects-design-tab" data-bs-toggle="tab" data-bs-target="#projects-design" type="button" role="tab" aria-controls="projects-design" aria-selected="false">Design</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="projects-featured" role="tabpanel" aria-labelledby="projects-featured">
+                <a href="/sbfake.html" class="project featured">
+                    <img src="assets/sbfake.png" alt="project 1">
+                    <div class="project-desc">
+                      <h3>Sb Fake Application</h3>
+                      <p>A full stack web app for the Sbfake algorithm to generate and compare fake variants of technical documents with the goal to prevent Intellectual Property theft.</p>
+                    </div>
+                  </a>
+                  <a class="project featured">
+                    <img src="assets/knightlab.png" alt="project 1">
+                    <div class="project-desc">
+                      <h3>Weather Bot</h3>
+                      <p>A NLP tool that retrieves and translates live weather information to generate and publish news reports streamlining the reporting process by saving reporters hours daily.</p>
+                    </div>
+                  </a>
+            </div>
+            <div class="tab-pane fade" id="projects-coding" role="tabpanel" aria-labelledby="projects-coding">
+                <div id ="coding">
+                
+                  <div class="project coding">
+                        <h3>AI Image Classifier</h3>
+                        <p> Developed a classifier for AI generated vs real images with state of art performance using a CNN model</p>
+                        <i class="fa-brands fa-github"></i>
                 </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="projects-featured" role="tabpanel" aria-labelledby="projects-featured-tab">
-                    <a href="/sbfake.html"class="project featured">
-                       
-                        <img src="assets/sbfake.png" alt="project 1" href="/sbfake.html">
-                         <div class="project-desc">
-                        <h3 href="/sbfake.html">Sb Fake Application</h3>
-                        <p>A full stack web app for the Sbfake algorithm to generate and compare fake variants of technical documents with the goal to prevent Intellectual Property theft.</p>
-                         </div>
-                        </a>
-               
-                    <div class="project featured">
-                        <img src="assets/knightlab.png" alt="project 1">
-                        <div class="project-desc">
-                        <h3>Weather Bot</h3>
-                        <p>A NLP tool that retrieves and translates live weather information to generate and publish news reports streamlining the reporting process by saving reporters hours daily.</p>
-                        </div>
+                      <div class="project coding">
+                        <h3> Design Your Delta</h3>
+                        <p>A full stack application that allows law students to visualize their skills with a spider graph and plan their studies with suggested personalized resources</p>
+                        <i class="fa-brands fa-github"></i>
+                      </div>
+                 <div class="project coding">
+                    
+                    <h3>ML Face Filters</h3>
+                    <p>Used ML.5js to create art face filters similar to Snapchat  and a game based on hands gestures detection </p>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                 
+                  <div class="project coding">
+                    
+                   
+                    <h3>Movie Reviews Bayes Classifer</h3>
+                    <p>Using the Naive Bayes algorithm to predict positive or negative sentiment from movie reviews</p>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                </div>
+          
+            </div>
+            <div class="tab-pane fade" id="projects-research" role="tabpanel" aria-labelledby="projects-research">
+                
+                <div class="project featured">
+                    <img src="assets/affinder.png" alt="project 1">
+                    <div class="project-desc">
+                      <h3>Human AI Tools for Concept Expression and Development</h3>
+                      <p>A full stack web app for the Sbfake algorithm to generate and compare fake variants of technical documents with the goal to prevent Intellectual Property theft.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="projects-design" role="tabpanel" aria-labelledby="projects-design">
+                <div  class="project featured">
+                    <img src="assets/doordash.png" alt="project 1">
+                    <div class="project-desc">
+                      <h3>Human AI Tools for Concept Expression and Development</h3>
+                      <p>A full stack web app for the Sbfake algorithm to generate and compare fake variants of technical documents with the goal to prevent Intellectual Property theft.</p>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="projects-coding" role="tabpanel" aria-labelledby="projects-coding-tab">...</div>
-                <div class="tab-pane fade" id="projects-research" role="tabpanel" aria-labelledby="projects-research-tab">...</div>
-                <div class="tab-pane fade" id="projects-design" role="tabpanel" aria-labelledby="projects-design-tab">...</div>
+                  <div class="project featured">
+                    <img src="assets/tokbot.png" alt="project 1">
+                    <div class="project-desc">
+                      <h3>Human AI Tools for Concept Expression and Development</h3>
+                      <p>A full stack web app for the Sbfake algorithm to generate and compare fake variants of technical documents with the goal to prevent Intellectual Property theft.</p>
+                    </div>
+                  </div>
             </div>
-        </div>
+          </div>
+    </div>
         
 
 
@@ -126,9 +178,9 @@
 
     
     <div class="socials">
-        <a href="https://www.linkedin.com/in/mame-coumba-ka-1b1b3a1b0/">Linkedin</a>
-        <a href="github.com/coumbak">Github</a>
-        <a href="">X</a>
+        <a href="https://www.linkedin.com/in/mame-coumba-ka-1b1b3a1b0/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="github.com/coumbak"></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
 </footer>
 </body>
 </html>

@@ -51,3 +51,30 @@ window.addEventListener("load", function () {
       }
     });
   });
+  // JavaScript code
+let currentIndex = 0;
+const images = document.querySelectorAll('#imageCollage img');
+const totalImages = images.length;
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % totalImages;
+  updateImages();
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+  updateImages();
+});
+
+function updateImages() {
+  images.forEach((img, index) => {
+    const rotation = index === currentIndex ? 0 : (index - currentIndex) * 5;
+    const zIndex = index === currentIndex ? 3 : Math.abs(index - currentIndex);
+    img.style.transform = `rotate(${rotation}deg)`;
+    img.style.zIndex = zIndex;
+  });
+}
+function flipImage(img) {
+  img.classList.toggle('flipped');
+  console.log("flipped")
+}

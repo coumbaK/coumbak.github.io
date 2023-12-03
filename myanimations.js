@@ -15,16 +15,16 @@ let animations = [
         let wave = {
           xspacing: 16,
           w: p.width + 16,
-          theta: p.random(p.TWO_PI),
-          amplitude: p.random(50, 230),
-          period: p.random(200, 800),
+          theta: p.random(p.PI,p.TWO_PI),
+          amplitude: p.random(150,190),
+          period: p.random(400, 800),
           dx: 0,
           yvalues: [],
         };
 
         wave.dx = (p.TWO_PI / wave.period) * wave.xspacing;
         wave.yvalues = new Array(p.floor(wave.w / wave.xspacing));
-
+        
         this.waves.push(wave);
       }
     },
@@ -41,9 +41,10 @@ let animations = [
       wave.theta += 0.02;
       let x = wave.theta * p.noise(0.1);
       for (let i = 0; i < wave.yvalues.length; i++) {
-        wave.yvalues[i] = p.sin(x) * wave.amplitude * p.noise(0.1);
+        wave.yvalues[i] = p.sin(x) * wave.amplitude * p.noise(0.01) ;
         x += wave.dx * p.noise(0.01);
       }
+    
     },
 
     renderWave(baseHeight, wave, i, p) {
@@ -52,6 +53,7 @@ let animations = [
       let c = p.lerpColor(p.color("#C2DBDF"), p.color("#068D9D"), colorRatio);
       c.setAlpha(128 + 128 * p.noise(p.millis() / 750));
       p.fill(c);
+      
 
       // Begin the rectangle shape for the water wave
       p.beginShape();
