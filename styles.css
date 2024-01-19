@@ -47,8 +47,9 @@ nav ul li a {
  
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  padding-top : 10%;
   margin : 0;
   width : 100%;
  
@@ -56,6 +57,10 @@ nav ul li a {
 
 #identifier{
  width : 70%;
+ display : flex;
+ flex-direction: column;
+  justify-content : flex-start;
+  align-items : flex-start;
 }
 #defaultCanvas0 {
   width: 100%;
@@ -67,7 +72,13 @@ nav ul li a {
 #animation.img {
   width: 100%;
 }
-
+.nav-pills .nav-link {
+  color : #3a9ba9 ;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #3a9ba9 !important;
+}
 h1 {
   color: #000;
 
@@ -77,14 +88,16 @@ font-style: normal;
 font-weight: 800;
 line-height: normal;
 text-align: left;
-margin-top :5%;
-margin-bottom : 5%;
+margin : 5% !important;
+margin-left : 0   !important;
+font-size : 3.5rem !important;
+
 }
 
 #identifier > h2 {
-  color: rgba(0, 0, 0, 0.53);
+ 
   font-family: Lato;
-
+;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -123,7 +136,7 @@ script,canvas {
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: #068D9D;
+  background-color: #3a9ba9;
   justify-content: center;
   align-items: center;
   color: #ffffff;
@@ -258,10 +271,19 @@ line-height: normal;
   padding : 5%;
   margin : 5% 0%;
   gap : 5%;
-  background-color:#87CEFA;
+  border : 1px solid #3a9ba9;
 
 
 } 
+.nav-pills {
+  color : #3a9ba9;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #3a9ba9 !important;
+}
+
 .project.coding i {
   font-size: 24px;
 } 
@@ -292,7 +314,7 @@ line-height: normal;
   justify-content : space-between;
   align-items : space-between;
   padding : 5% 25%;
-  background-color: #068D9D;
+  background-color: #3a9ba9;
   width: 100vw;
   
 
