@@ -378,8 +378,9 @@ line-height: normal;
   /* width: 100%;
 }*/
 .project img {
- 
-  border : 1px solid #A55B80;
+  width: 400px;
+  height: 250px;
+
 }
 .project-container {
   display: flex;
