@@ -3,187 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <script src="https://kit.fontawesome.com/92a7126d32.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat+Alternates:ital,wght@1,500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   <title>Coumba's Portfolio</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-  <script  src="myanimations.js" ></script>
 
-  <!-- Sets up all the swatches -->
-  <script  src="app.js" ></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat+Alternates:ital,wght@1,500&family=Montserrat:wght@400;500&family=Abril+Fatface&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/92a7126d32.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="myanimations.js"></script>
+  <script src="app.js"></script>
 </head>
 <body>
   
-    <nav class="nav">
-        <span class="logo">MCK</span>
-        <ul>
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#aboutme">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+  <!-- Navigation -->
+  <nav class="nav">
+    <span class="logo">MCK</span>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
 
-            <li>
-                <a href="footer">Contact</a>
-        </ul>
-    
-    </nav>
-
-    <div id="home">
-      <div id="identifier">
-    <h3> Hi, my name is </h3>
+  <!-- Hero -->
+  <section id="home">
+    <div id="identifier">
+      <h3> Hi, my name is </h3>
     <h1>Mame Coumba Ka </h1>
     <h2>I'm a  <span style="color :#46166B"> software developer</span>,<span style=" color: #068D9D;"> designer</span>, and <span style="color :#DBB1BC"> researcher</span>.
        <h2>
-</div>
-   <img src="assets/Wave.png"/>
-</div>
-
-       
-        <div id="aboutme">
-           <img src="assets/collage.png" alt="mame">
-            <div class="desc">
-            <h2> Diving Into It...</h2>
-            <p>I'm not just about code; I'm all about making technology that serves people's needs and reflects human values.</p>
-             <p>I research  and develop <span style="color :#DBB1BC">Human-AI tools </span>  in Northwestern Design, Technology and Research group seeking to support designers of context aware applications.  </p>
-            <p>I am a part-time <span style="color :#46166B"> software developer </span> at the Knight Lab and Northwestern Security and AI lab where I’ve made a weather report generation tool for local newspapers and a user application for a ML algorithm.</p>
-            <p>I have completed the Segal Design Certificate and was part of the Bay Area Immersion Program 2023 cohort.</p>
-            <p>Outside of school and work , I love water and my favorite hobby is kayaking. I'm also a proud UWC alumni and I speak 5 languages and enjoy learning more in my free time.</p>
-        </div>
-        </div>
+      </h2>
     </div>
-    <div id="projects">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="projects-featured-tab" data-bs-toggle="tab" data-bs-target="#projects-featured" type="button" role="tab" aria-controls="projects-featured" aria-selected="true">Featured</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="projects-coding-tab" data-bs-toggle="tab" data-bs-target="#projects-coding" type="button" role="tab" aria-controls="projects-coding" aria-selected="false">Coding</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="projects-research-tab" data-bs-toggle="tab" data-bs-target="#projects-research" type="button" role="tab" aria-controls="projects-research" aria-selected="false">Research</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="projects-design-tab" data-bs-toggle="tab" data-bs-target="#projects-design" type="button" role="tab" aria-controls="projects-design" aria-selected="false">Design</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="projects-featured" role="tabpanel" aria-labelledby="projects-featured">
-                <a href="/sbfake.html" class="project featured">
-                    <img src="assets/sbfake.png" alt="project 1">
-                    <div class="project-desc">
-                      <h3>Sb Fake Application</h3>
-                      <p>A full stack web app for the Sbfake algorithm to generate and compare fake variants of technical documents with the goal to prevent Intellectual Property theft.</p>
-                    </div>
-                  </a>
-                  <a class="project featured">
-                    <img src="assets/knightlab.png" alt="project 1">
-                    <div class="project-desc">
-                      <h3>Weather Bot</h3>
-                      <p>A NLP tool that retrieves and translates live weather information to generate and publish news reports streamlining the reporting process by saving reporters hours daily.</p>
-                    </div>
-                  </a>
-            </div>
-            <div class="tab-pane fade" id="projects-coding" role="tabpanel" aria-labelledby="projects-coding">
-                <div id ="coding">
-                
-                  <div class="project coding">
-                        <h3>AI Image Classifier</h3>
-                        <p> My team developed a classifier for AI generated vs real images with state of art performance using a CNN model</p>
-                        <i class="fa-brands fa-github"></i>
-                </div>
-                      <div class="project coding">
-                        <h3> Design Your Delta</h3>
-                        <p>We built a full stack application that allows law students to visualize their skills with a spider graph and plan their studies with suggested personalized resources</p>
-                        <i class="fa-brands fa-github"></i>
-                      </div>
-                 <div class="project coding">
-                    
-                    <h3>ML Face Filters</h3>
-                    <p>I used ML.5js and P5.js to create art filters using facial recognition , inspired by Snapchat filters </p>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                 
-                  <div class="project coding">
-                    
-                   
-                    <h3>Movie Reviews Bayes Classifer</h3>
-                    <p>I implemented the Naive Bayes algorithm to predict positive or negative sentiment from movie reviews</p>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                </div>
-          
-            </div>
-            <div class="tab-pane fade" id="projects-research" role="tabpanel" aria-labelledby="projects-research">
-                
-                <div class="project featured">
-                    <img src="assets/affinder.png" alt="project 1">
-                    <div class="project-desc">
-                      <h3>Human AI Tools for Concept Expression and Development</h3>
-                      <p>As a student-researcher in the Design, Technology, and Research (DTR) program, 
-                        I actively participate in Human-Computer Interaction (HCI) research, with a specific emphasis on developing Human-AI co-creation tools tailored for designers working on context-aware applications
-                        
-                         <a href="https://dtr.northwestern.edu/projects/rec2H7cGF99eFlRSw"> Read More</a> </p>
-                    </div>
-                  </div>
-            </div>
-            <div class="tab-pane fade" id="projects-design" role="tabpanel" aria-labelledby="projects-design">
-                <div  class="project featured">
-                    <img src="assets/doordash.png" alt="project 1">
-                    <div class="project-desc">
-                      <h3>Doordash: elevating the loyalty experience</h3>
-                      <p>Our team worked on enhancing the loyalty experience by conducting research focused on privileges for top-spending members. </p>
-                    </div>
-                </div>
-                  <div class="project featured">
-                    <img src="assets/tokbot.png" alt="project 1">
-                    <div class="project-desc">
-                      <h3>Tiktok: Reinventing Interactive Ads</h3>
+  </section>
+<!-- Projects -->
+<section id="projects">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="projects-featured-tab" data-bs-toggle="tab" data-bs-target="#projects-featured" type="button" role="tab" aria-controls="projects-featured" aria-selected="true">Featured</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="projects-research-tab" data-bs-toggle="tab" data-bs-target="#projects-research" type="button" role="tab" aria-controls="projects-research" aria-selected="false">Research</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="projects-design-tab" data-bs-toggle="tab" data-bs-target="#projects-design" type="button" role="tab" aria-controls="projects-design" aria-selected="false">Design</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="coding-tab" data-bs-toggle="tab" data-bs-target="#coding" type="button" role="tab" aria-controls="projects-coding" aria-selected="false">More Coding</button>
+    </li>
+  </ul>
 
-                      <p> 
-                        We partnered with the Brands Ads Product Team at TikTok to revolutionize advertising on the platform and facilitate collaboration between advertisers and content creators for the creation of seamlessly integrated ads.
-                      </p>
-                    </div>
-                  </div>
-            </div>
-          </div>
+  <div class="tab-content" id="pills-tabContent">
+    <!-- Featured -->
+    <div class="tab-pane fade show active" id="projects-featured" role="tabpanel" aria-labelledby="projects-featured-tab">
+      <a href="tinystories.html" class="project featured">
+        <img src="assets/knightlab.png" alt="Tiny Stories project thumbnail">
+        <div class="project-desc">
+          <h3>Tiny Stories</h3>
+          <p>Replicating the TinyStories paper, I trained a compact 9M-parameter language model to test how small models can still generate coherent English.</p>
+        </div>
+      </a>
+
+      <a href="sbfake.html" class="project featured">
+        <img src="assets/sbfake.png" alt="SBFake project thumbnail">
+        <div class="project-desc">
+          <h3>Sb Fake Application</h3>
+          <p>A full stack web app for the Sbfake algorithm to generate and compare fake variants of technical documents with the goal to prevent Intellectual Property theft.</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/NUKnightLab/weatherbot" class="project featured">
+        <img src="assets/knightlab.png" alt="Weather Bot project thumbnail">
+        <div class="project-desc">
+          <h3>Weather Bot</h3>
+          <p>At the Knight Lab, I worked on an NLP tool that retrieves and translates live weather information to generate and publish news reports as part of the Local AI projects in collaboration with AP News. Check out the open source code on Github.</p>
+        </div>
+      </a>
     </div>
-        
+
+    <!-- Research -->
+    <div class="tab-pane fade" id="projects-research" role="tabpanel" aria-labelledby="projects-research-tab">
+      <div class="project featured">
+        <img src="assets/affinder.png" alt="Human AI tools project thumbnail">
+        <div class="project-desc">
+          <h3>Human AI Tools for Concept Expression and Development</h3>
+          <p>As a student-researcher in the Design, Technology, and Research (DTR) program, I self-directed a project on Human-AI co-creation tools for designers of context-aware applications. 
+            <a href="https://dtr.northwestern.edu/projects/rec2H7cGF99eFlRSw">Read More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design -->
+    <div class="tab-pane fade" id="projects-design" role="tabpanel" aria-labelledby="projects-design-tab">
+      <div class="project featured">
+        <img src="assets/doordash.png" alt="Doordash loyalty project thumbnail">
+        <div class="project-desc">
+          <h3>Doordash: Elevating the Loyalty Experience</h3>
+          <p>Enhanced loyalty experience by researching privileges for top-spending members.</p>
+        </div>
+      </div>
+      <div class="project featured">
+        <img src="assets/tokbot.png" alt="TikTok ads project thumbnail">
+        <div class="project-desc">
+          <h3>TikTok: Reinventing Interactive Ads</h3>
+          <p>Partnered with the Brand Ads Product Team at TikTok to redesign ad experiences and foster collaboration between advertisers and content creators.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coding -->
+    <div class="tab-pane fade" id="coding" role="tabpanel" aria-labelledby="projects-coding-tab">
+      <div class="project coding">
+        <h3>Drama Recommendation Engine</h3>
+        <p>Building an Asian drama recommendation system using content-based filtering, with plans to integrate collaborative filtering for personalized suggestions.</p>
+        <a href="https://colab.research.google.com/drive/1pYWNEOoggHi1vQEKJrccBsu_LpAlXaAE?usp=sharing"><i class="fa-brands fa-google"></i></a>
+      </div>
+
+      <div class="project coding">
+        <h3>Design Your Delta</h3>
+        <p>A full stack app that lets law students visualize their skills with a spider graph and plan studies with personalized resources.</p>
+        <a href="https://github.com/cs394-s23/delta-lab"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <div class="project coding">
+        <h3>AI Image Classifier</h3>
+        <p>Developed a classifier for AI-generated vs. real images using a CNN model with state-of-the-art performance.</p>
+        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <div class="project coding">
+        <h3>ML Face Filters</h3>
+        <p>Created art filters using ml5.js and p5.js for facial recognition, inspired by Snapchat filters.</p>
+        <a href="https://github.com/coumbaK/MasksML"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <div class="project coding">
+        <h3>Movie Reviews Bayes Classifier</h3>
+        <p>Implemented Naive Bayes to predict positive/negative sentiment from movie reviews.</p>
+        <a href="https://github.com/coumbaK/naive-bayes-classifier-movies"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div> <!-- /.tab-content -->
+</section>
 
 
 
-
-   
-
-  <footer class="footer"> 
+  <!-- Footer -->
+  <footer id="footer" class="footer"> 
     <h3>Let's Get In Touch</h3>
-    <p>Feel free to reach out if you're if you have a question, or just want to connect!</p>
+    <p>Feel free to reach out if you have a question, or just want to connect!</p>
+    
     <div class="contact">
-    <div class="pe">
-    <span>email</span>
-    <a href="mailto:mameka2024@u.northwestern.edu">mameka2024@u.northwestern.edu</a>
-</div>
-    <div class="pe">
-    <span>phone</span>
-    <a href="tel:224-251-0733">224-251-0733</a>
-    </div>
+      <div class="pe">
+        <span>Email</span>
+        <a href="mailto:mameka2024@u.northwestern.edu">mameka2024@u.northwestern.edu</a>
+      </div>
+      <div class="pe">
+        <span>Phone</span>
+        <a href="tel:224-251-0733">224-251-0733</a>
+      </div>
     </div>
 
-    
     <div class="socials">
-        <a href="https://www.linkedin.com/in/mame-coumba-ka-1b1b3a1b0/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="github.com/coumbak"></a>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-</footer>
+      <a href="https://www.linkedin.com/in/mame-coumba-ka-1b1b3a1b0/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/coumbak" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </footer>
+
 </body>
 </html>
